@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
 
     console.log('Petición recibida node mun')
 
-    res.send('<h1> Un titulo que dice x </h1>')
+    res.send('<h1> Un titulo que dice todo </h1>')
 
 })
 
