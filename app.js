@@ -1,6 +1,9 @@
-const express = require('express')
+require('dotenv').config()
 
+const express = require('express')
 const app = express()
+
+
 
 app.get('/', (req, res) => {
 
@@ -10,6 +13,9 @@ app.get('/', (req, res) => {
 
 })
 
-app.listen(4000, () => {
-    console.log('Servidor escuchando en el puerto 4000')
+/*Creo una variable local de puerto*/
+const PORT = process.env.PORT
+
+app.listen(PORT, () => {
+    console.log(`Servidor escuchando en el puerto ${PORT}`) 
 })
